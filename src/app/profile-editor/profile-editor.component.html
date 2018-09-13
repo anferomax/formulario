@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<div class="card" style="width: 18rem;">
+  <form [formGroup]="profileForm">
+  <div class="card-header">
+    Formly
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <table>
+        <tr>
+          <td>
+            Name * 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input formControlName="name">
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li class="list-group-item">
+      <table>
+        <tr>
+          <td>Email *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input formControlName="email">
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li class="list-group-item">
+      <table>
+        <tr>
+          <td>Country *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select class="list-item" formControlName="country">
+              <option></option>
+              <option>Argentina</option>
+              <option>Brasil</option>
+              <option>Chile</option>
+              <option>Colombia</option>
+              <option>Uruguay</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li class="list-group-item">
+      <table>
+        <tr>
+          <td>Message *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" size="30" formControlName="message">
+          </td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+  </form>
+
+  {{profileForm.value | json }}
+  {{profileForm.status }}
+</div>
+
+<!--
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  
+  <table>
+    <tr>
+      <td>
+        <label>Name *</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" formControlName="firstName">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Email * </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" formControlName="lastName">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Country * </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select>
+          <option></option>
+          <option>Argentina</option>
+          <option>Brasil</option>
+          <option>Chile</option>
+          <option>Colombia</option>
+          <option>Uruguay</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+      </td>
+    </tr>
+  </table>
+</form>
+-->

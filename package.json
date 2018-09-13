@@ -20,6 +20,13 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@ngx-formly/bootstrap": "^4.7.2",
+    "@ngx-formly/core": "^4.7.2",
+    "@ngx-formly/ionic": "^4.7.2",
+    "@ngx-formly/kendo": "^4.7.2",
+    "@ngx-formly/material": "^4.7.2",
+    "@ngx-formly/nativescript": "0.0.1",
+    "@ngx-formly/primeng": "^4.7.2",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
